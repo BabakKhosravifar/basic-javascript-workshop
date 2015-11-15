@@ -210,7 +210,20 @@ function theLargestNumber(array) {
 function truthy(value) {
   return value >= 0;
 }
-var filtered = [12, 5, 8, 130, 44].filter(truthy);
-console.log(filtered);
-console.log([-2,4,-5,-3,6,3].filter(truthy));
-console.log([0,-44,-5,-3,6,3].filter(truthy));
+//var filtered = [12, 5, 8, 130, 44].filter(truthy);
+//console.log(filtered);
+//console.log([-2,4,-5,-3,6,3].filter(truthy));
+//console.log([0,-44,-5,-3,6,3].filter(truthy));
+
+
+//EX14------------------------------------------
+function arraySum(array) {
+  var sum=0;
+  for(var i=0;i<array.length;i++)
+    sum+=array[i];
+  return sum;
+}
+var sum = arraySum([12, 5, 8, 130, 44]);
+console.log(sum);
+console.log(arraySum([-2,4,-5,-3,6,3]));
+console.log(arraySum([0,-44,-5,-3,6,3]));
