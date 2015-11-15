@@ -90,9 +90,23 @@ function compute(m,n,string)
     }
 }
 
-var answer1 = compute(23,76,"div");
-console.log(answer1);
-console.log(compute(3,9.76,"sum"));
-console.log(compute(-32.875,0.4325,"subtract"));
-console.log(compute("java",3,"add"));
+//var answer1 = compute(23,76,"div");
+//console.log(answer1);
+//console.log(compute(3,9.76,"sum"));
+//console.log(compute(-32.875,0.4325,"subtract"));
+//console.log(compute("java",3,"add"));
+
+
+
+//EX7------------------------------------------
+function repeatString(string,m)
+{
+    for (var i=1;i<=m;i++)
+        console.log(string);
+}
+
+repeatString("Babak",5);
+repeatString("string,m",3);
+repeatString("javascript",0);
+repeatString(string,3);
 
