@@ -105,8 +105,20 @@ function repeatString(string,m)
         console.log(string);
 }
 
-repeatString("Babak",5);
-repeatString("string,m",3);
-repeatString("javascript",0);
-repeatString(string,3);
+//repeatString("Babak",5);
+//repeatString("string,m",3);
+//repeatString("javascript",0);
+//repeatString(string,3);
 
+
+//EX8------------------------------------------
+function reverse(string) {
+  var reverse = '';
+  for (var i = string.length - 1; i >= 0; i--)
+    reverse += string[i];
+  return reverse;
+}
+
+console.log(reverse("Babak"));
+console.log(reverse("javascript"));
+console.log(reverse(""));
