@@ -223,7 +223,125 @@ function arraySum(array) {
     sum+=array[i];
   return sum;
 }
-var sum = arraySum([12, 5, 8, 130, 44]);
-console.log(sum);
-console.log(arraySum([-2,4,-5,-3,6,3]));
-console.log(arraySum([0,-44,-5,-3,6,3]));
+//var sum = arraySum([12, 5, 8, 130, 44]);
+//console.log(sum);
+//console.log(arraySum([-2,4,-5,-3,6,3]));
+//console.log(arraySum([0,-44,-5,-3,6,3]));
+
+
+//EX15------------------------------------------
+function minusArray(array1,array2) {
+    var returnArray = [];
+    var removeFrom1=[];
+    var removeFrom2=[];
+    for(var i=0; i<array1.length; i++){
+        var flag = 0;
+        for(var j=0;j<array2.length;j++){
+            if(array1[i]===array2[j]){
+                if (flag===0){
+                    flag=1;
+                    removeFrom1.push(i);
+                    removeFrom2.push(j);
+                }
+                else{
+                    removeFrom2.push(j);
+                }
+            }
+        }
+        }
+        
+    var k =0;    
+    for(i=0;i<array1.length;i++){
+        flag=0;
+        for(j=0;j<removeFrom1.l;j++)
+            if(i===removeFrom1[j]) flag=1;
+        if (flag=0){
+            returnArray[k] = array1[i];
+            k++;
+        }
+            
+    }
+//    console.log(removeFrom1);
+//    console.log(removeFrom2);
+//    console.log(returnArray);
+}
+
+//minusArray([-2,4,-5,-3,6,3],[2,3,3,3,3,5,6]);
+//minusArray([0,-44,-5,-3,6,3],[-44,-5,3,0,1]);
+
+
+//EX14------------------------------------------
+function square(number) {
+ return number^2;
+}
+function cube(number) {
+ return number^3;
+}
+function squareRoot(number) {
+ return number^(1/2);
+}
+function cubeRoot(number) {
+ return number^(1/3);
+}
+
+//function applyFunction(array,func()){
+//    var returnArray = [];
+//    for (var i=0;i<array.length;i++)
+//        returnArray[i] = func(array[i]);
+//}
+
+//console.log(applyFunction([1,2,4,5,6],squareRoot()));
+
+
+
+
+
+function call_me(courseHwork,daysArray){
+var same = new Array();
+var result = new Array();
+
+for (var i = 0; i < courseHwork.length; i++) {
+    for (var j = 0; j < daysArray.length; j++) {
+        if (courseHwork[i] == daysArray[j]) {
+          same.push(courseHwork[i]);
+        }
+    }
+}
+console.log(same);
+
+for (var i = 0; i < courseHwork.length; i++) {
+    var flag = 0;
+	for (var j = 0; j < same.length; j++) {
+		 if (courseHwork[i] == same[j]) {
+            flag=1; 
+        }
+        
+	}
+	if(flag===0){
+	    result.push(courseHwork[i]);
+	}
+}
+
+for (var i = 0; i < daysArray.length; i++) {
+    flag = 0;
+	for (var j = 0; j < same.length; j++) {
+		 if (daysArray[i] == same[j]) {
+            flag=1; 
+        }
+        
+	}
+	if(flag===0){
+	    result.push(daysArray[i]);
+	}
+}
+console.log(result);
+	
+}
+
+
+
+
+
+call_me(["4", "8", "2", "5", "5"],["1", "2", "5", "6", "2", "2"]);
+call_me(["1", "2", "3", "4", "2"],["0", "2", "5", "4", "4", "4"]);
+call_me(["2", "2", "2", "2", "3"],[]);
