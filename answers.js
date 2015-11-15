@@ -180,6 +180,26 @@ function capitilize(string) {
     return capString;
 }
 
-console.log(capitilize("here is the  first check!"));
-console.log(capitilize("here is the second check of this   function! "));
-console.log(capitilize("LetsSeeWhatThisSays  "));
+//console.log(capitilize("here is the  first check!"));
+//console.log(capitilize("here is the second check of this   function! "));
+//console.log(capitilize("LetsSeeWhatThisSays  "));
+
+
+
+//EX12------------------------------------------
+function theLargestNumber(array) {
+    var num;
+    var theLargestNumber=-9999999999;
+    for (var i=0;i<array.length;i++){
+        if(array[i]>theLargestNumber){
+            theLargestNumber=array[i];
+        }
+    }
+    if(theLargestNumber===-9999999999)
+        return undefined;
+    else return theLargestNumber;
+}
+
+console.log(theLargestNumber([3,5,2,6,8,5,3]));
+console.log(theLargestNumber([4,4,4,4,4]));
+console.log(theLargestNumber("LetsSeeWhatThisSays"));
