@@ -48,8 +48,23 @@ function sum(m,n)
     return m+n;
 }
 
-var answer1 = sum(23,76);
+//var answer1 = sum(23,76);
+//console.log(answer1);
+//console.log(sum(3,9.76));
+//console.log(sum(-32.875,0.4325));
+//console.log(sum("java",3));
+
+
+//EX5------------------------------------------
+function multiply(m,n)
+{
+    return m*n;
+}
+
+var answer1 = multiply(23,76);
 console.log(answer1);
-console.log(sum(3,9.76));
-console.log(sum(-32.875,0.4325));
-console.log(sum("java",3));
+console.log(multiply(3,9.76));
+console.log(multiply(-32.875,0.4325));
+console.log(multiply("java",3));
+
+
