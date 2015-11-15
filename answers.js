@@ -20,8 +20,22 @@ function returnLastCharacter(string)
     return string[string.length-1];
 }
 
-var answer1 = returnLastCharacter("Babak");
+//var answer1 = returnLastCharacter("Babak");
+//console.log(answer1);
+//console.log(returnLastCharacter("javascript"));
+//console.log(returnLastCharacter("Javascript"));
+//console.log(returnLastCharacter(""));
+
+
+
+//EX3------------------------------------------
+function returnTheCharacter(string,number)
+{
+    return string[number];
+}
+
+var answer1 = returnTheCharacter("Babak",3);
 console.log(answer1);
-console.log(returnLastCharacter("javascript"));
-console.log(returnLastCharacter("Javascript"));
-console.log(returnLastCharacter(""));
+console.log(returnTheCharacter("javascript",4));
+console.log(returnTheCharacter("Javascript",8));
+console.log(returnTheCharacter("",5));
