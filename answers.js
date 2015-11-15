@@ -34,8 +34,22 @@ function returnTheCharacter(string,number)
     return string[number];
 }
 
-var answer1 = returnTheCharacter("Babak",3);
+//var answer1 = returnTheCharacter("Babak",3);
+//console.log(answer1);
+//console.log(returnTheCharacter("javascript",4));
+//console.log(returnTheCharacter("Javascript",8));
+//console.log(returnTheCharacter("",5));
+
+
+
+//EX4------------------------------------------
+function sum(m,n)
+{
+    return m+n;
+}
+
+var answer1 = sum(23,76);
 console.log(answer1);
-console.log(returnTheCharacter("javascript",4));
-console.log(returnTheCharacter("Javascript",8));
-console.log(returnTheCharacter("",5));
+console.log(sum(3,9.76));
+console.log(sum(-32.875,0.4325));
+console.log(sum("java",3));
