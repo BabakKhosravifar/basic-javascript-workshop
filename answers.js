@@ -200,6 +200,17 @@ function theLargestNumber(array) {
     else return theLargestNumber;
 }
 
-console.log(theLargestNumber([3,5,2,6,8,5,3]));
-console.log(theLargestNumber([4,4,4,4,4]));
-console.log(theLargestNumber("LetsSeeWhatThisSays"));
+//console.log(theLargestNumber([3,5,2,6,8,5,3]));
+//console.log(theLargestNumber([4,4,4,4,4]));
+//console.log(theLargestNumber("LetsSeeWhatThisSays"));
+
+
+
+//EX13------------------------------------------
+function truthy(value) {
+  return value >= 0;
+}
+var filtered = [12, 5, 8, 130, 44].filter(truthy);
+console.log(filtered);
+console.log([-2,4,-5,-3,6,3].filter(truthy));
+console.log([0,-44,-5,-3,6,3].filter(truthy));
