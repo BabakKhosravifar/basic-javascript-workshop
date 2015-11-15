@@ -61,10 +61,38 @@ function multiply(m,n)
     return m*n;
 }
 
-var answer1 = multiply(23,76);
-console.log(answer1);
-console.log(multiply(3,9.76));
-console.log(multiply(-32.875,0.4325));
-console.log(multiply("java",3));
+//var answer1 = multiply(23,76);
+//console.log(answer1);
+//console.log(multiply(3,9.76));
+//console.log(multiply(-32.875,0.4325));
+//console.log(multiply("java",3));
 
+
+//EX6------------------------------------------
+function compute(m,n,string)
+{
+    switch (string){
+        case "add":
+            return m+n;
+            break;
+        case "subtract":
+            return m-n;
+            break;
+        case "mult":
+            return m*n;
+            break;
+        case "div":
+            return m/n;
+            break;
+        default:
+        return 0;
+        break;
+    }
+}
+
+var answer1 = compute(23,76,"div");
+console.log(answer1);
+console.log(compute(3,9.76,"sum"));
+console.log(compute(-32.875,0.4325,"subtract"));
+console.log(compute("java",3,"add"));
 
