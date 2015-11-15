@@ -119,6 +119,20 @@ function reverse(string) {
   return reverse;
 }
 
-console.log(reverse("Babak"));
-console.log(reverse("javascript"));
-console.log(reverse(""));
+//console.log(reverse("Babak"));
+//console.log(reverse("javascript"));
+//console.log(reverse(""));
+
+
+//EX9------------------------------------------
+function factorial(number) {
+  var factorial = 1;
+  for (var i = 1; i <=number; i++)
+    factorial *= i;
+  return factorial;
+}
+
+console.log(factorial(0));
+console.log(factorial(18));
+console.log(factorial(128));
+console.log(factorial("null"));
