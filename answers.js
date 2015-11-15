@@ -158,6 +158,28 @@ function theLongestWord(string) {
     return theLongestWord;
 }
 
-console.log(theLongestWord("Here is the first check!"));
-console.log(theLongestWord("Here is the second check of this function!"));
-console.log(theLongestWord("LetsSeeWhatThisSays"));
+//console.log(theLongestWord("Here is the first check!"));
+//console.log(theLongestWord("Here is the second check of this function!"));
+//console.log(theLongestWord("LetsSeeWhatThisSays"));
+
+
+//EX11------------------------------------------
+function capitilize(string) {
+    var capString='';
+    for (var i=0;i<string.length;i++){
+        if(i===0) capString+=string[i].toUpperCase();
+        else 
+        if(string[i]===' ' && i<string.length-1){
+            capString+=' ';
+            capString+=string[i+1].toUpperCase();
+            
+        }
+        else if(string[i-1]!=' ')
+            capString+=string[i];
+    }
+    return capString;
+}
+
+console.log(capitilize("here is the  first check!"));
+console.log(capitilize("here is the second check of this   function! "));
+console.log(capitilize("LetsSeeWhatThisSays  "));
