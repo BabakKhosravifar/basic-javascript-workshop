@@ -132,7 +132,32 @@ function factorial(number) {
   return factorial;
 }
 
-console.log(factorial(0));
-console.log(factorial(18));
-console.log(factorial(128));
-console.log(factorial("null"));
+//console.log(factorial(0));
+//console.log(factorial(18));
+//console.log(factorial(128));
+//console.log(factorial("null"));
+
+
+
+//EX10------------------------------------------
+function theLongestWord(string) {
+    var word = '';
+    var theLongestWord='';
+    for (var i=0;i<string.length;i++){
+        if(string[i]!=' '){
+            word+=string[i];
+        }
+        else{
+            if(word.length > theLongestWord.length)
+                theLongestWord=word;
+            word = '';
+        }
+    }
+    if(theLongestWord==='')
+        theLongestWord=word;
+    return theLongestWord;
+}
+
+console.log(theLongestWord("Here is the first check!"));
+console.log(theLongestWord("Here is the second check of this function!"));
+console.log(theLongestWord("LetsSeeWhatThisSays"));
